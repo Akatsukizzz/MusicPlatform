@@ -2,7 +2,7 @@
 
 
 
-#### 后端使用Spring+SpringMVC+Mybatis，配合tomcat9.0以及mysql8.0
+#### 后端使用Spring+SpringMVC+Mybatis，配合tomcat9.0以及MySQL8.0
 
 
 
