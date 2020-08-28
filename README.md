@@ -6,6 +6,8 @@
 
 
 
+##### 前端启动
+
 ### `npm run dev`
 
 此功能取代npm start启动项目，用于加载antd按需加载
@@ -21,4 +23,8 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+##### 后端启动
+
+配置tomcat服务器将web.xml换成back end/src/main/webapp/WEB-INF中的web.xml后直接启动tomcat即可
 
