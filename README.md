@@ -1,4 +1,8 @@
-#### 本项目为云音乐平台，使用react+antd，UI样式仿照网易云音乐web版本
+#### 本项目为云音乐平台，前端使用react+antd，UI样式仿照网易云音乐web版本
+
+
+
+#### 后端使用Spring+SpringMVC+Mybatis，配合tomcat9.0以及mysql8.0
 
 
 
@@ -17,5 +21,4 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 
