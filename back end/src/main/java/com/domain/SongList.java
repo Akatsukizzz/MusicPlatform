@@ -2,12 +2,15 @@ package com.domain;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @author Liu
  * Created on 2020/7/25.
  */
 public class SongList implements Serializable {
+    
+    private static final long serialVersionUID = -5836869806778079781L;
     
     private Integer uid;
     
@@ -53,6 +56,23 @@ public class SongList implements Serializable {
     
     public void setSongs (List<Song> songs) {
         this.songs = songs;
+    }
+    
+    @Override
+    public boolean equals (Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        SongList songList = (SongList) o;
+        return uid.equals(songList.uid) && listIndex.equals(songList.listIndex) && fullName.equals(songList.fullName) && Objects.equals(songs, songList.songs);
+    }
+    
+    @Override
+    public int hashCode () {
+        return Objects.hash(uid, listIndex, fullName, songs);
     }
     
 }

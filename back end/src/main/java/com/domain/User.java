@@ -1,12 +1,15 @@
 package com.domain;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * @author Liu
  * Created on 2020/7/20.
  */
 public class User implements Serializable {
+    
+    private static final long serialVersionUID = 3411648621834672921L;
     
     private Integer uid;
     
@@ -76,6 +79,23 @@ public class User implements Serializable {
 
     public void setLocation (String location) {
         this.location = location;
+    }
+    
+    @Override
+    public boolean equals (Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        User user = (User) o;
+        return uid.equals(user.uid) && phone.equals(user.phone);
+    }
+    
+    @Override
+    public int hashCode () {
+        return Objects.hash(uid, phone);
     }
     
 }
